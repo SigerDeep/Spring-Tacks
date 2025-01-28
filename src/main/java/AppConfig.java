@@ -17,10 +17,6 @@ public class AppConfig {
     @Bean(name="cat")
     @Scope(SCOPE_PROTOTYPE)
     public Cat getCat() {
-        Cat cat = new Cat();
-        cat.setName("newCat");
-        cat.setAge(0);
-        cat.setColor("black");
-        return cat;
+        return new Cat();
     }
 }
