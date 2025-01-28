@@ -17,6 +17,6 @@ public class AppConfig {
     @Bean(name="cat")
     @Scope(SCOPE_PROTOTYPE)
     public Cat getCat() {
-        return new Cat();
+        return new Cat("Vasia", 0, "Black");
     }
 }
